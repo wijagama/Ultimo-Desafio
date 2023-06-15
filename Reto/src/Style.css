@@ -1,0 +1,30 @@
+body {
+	font-size: 12px;
+	font-family: sans-serif;
+	background: #2e6395a6;
+}
+.card__body {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1.0rem;
+  }
+  @media screen and (max-width: 1040px) {
+	.card__body {
+	  grid-template-columns: 1fr 1fr;
+	  gap: 0.5rem;
+	}
+  }
+  @media screen and (max-width: 400px) {
+	.card__body {
+	  grid-template-columns: 1fr;
+	}
+  }
+  @media print {
+	.card__body {
+	  display: none;
+	}
+  }
+  
+  .Button-navbar{
+	text-align: end;
+	}
